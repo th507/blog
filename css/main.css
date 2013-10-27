@@ -25,7 +25,7 @@ th, td {
     border-left: 1px solid #ccc;
 }
 code, pre {
-    font-family: Source Code Pro, Menlo, Consolas, monospace;
+    font-family: Source Code Pro, Menlo, Monaco, Consolas, monospace;
 }
 p code {
     padding: 0 4px;
