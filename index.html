@@ -1,0 +1,17 @@
+---
+layout: default
+title: Your New Jekyll Site
+---
+
+<div class="post">
+    {% for post in site.posts %}
+    <div class="fourth">
+        <a class="title" href="{{ post.url }}">{{ post.title }}</a>
+        <div class="date">{{ post.date | date_to_string }}</div>
+    </div>
+    <div class="three-fourth">
+        {{ post.content }}
+    </div>
+    <div class="clear"></div>
+    {% endfor %}
+</div>
