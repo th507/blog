@@ -6,7 +6,7 @@ tags: translation
 ---
 
 
-最近玩票性质的接了一个小活：翻译 iPhone: The Missing Manual 中的部分内容。因为时间也比较紧张，译文几乎是一稿完成，并未做太多推敲，但其中也多少反应了我对翻译的一些理解，尤其是在时间比较紧张时翻译中的一些取舍，写出来供人参考鄙视，也算是个工作小结。
+最近玩票性质的接了一个小活：翻译 iPhone: The Missing Manual 中的部分内容。因为时间也比较紧张，译文几乎是一稿完成，并未做太多推敲，但其中也多少反应了我对翻译的一些理解，尤其是在时间比较紧张时翻译中的一些取舍，写出来供人参考，也算是个工作小结。
 
 ### 例子 1
 > Very few iPhone features have triggered as much angst, hope, and criticism as the onscreen keyboard.
