@@ -236,7 +236,7 @@ h1, h2, h3, h4, h5, h6, p {
         text-indent: 0;
     }
 }
-.post h2 {
+.post h2, .post h3 {
     font-size: 1em;
 }
 .post p {
