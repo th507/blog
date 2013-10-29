@@ -205,17 +205,28 @@ h1, h2, h3, h4, h5, h6, p {
     z-index: 4;
 }
 
-.post .title:hover {
+.fourth:hover .title {
     color: crimson;
     color: rgba(223, 10, 55, .8);
     background-color: white;
-    background-color: rgba(255, 255, 255, .8);
+    background-color: rgba(255, 255, 255, .7);
 
     overflow: visible;
     display: inline-block;
     border-bottom: 1px solid crimson;
     border-bottom: 1px solid rgba(223, 10, 55, .8);    
     min-width: 100%;
+}
+.fourth:hover ~ .three-fourth p:first-child {
+    -webkit-filter: blur(1px) grayscale(0.8);
+    
+    opacity: 0.5;
+    -webkit-transition-duration: .1s;
+    -moz-transition-duration: .1s;
+    -ms-transition-duration: .1s;
+    -o-transition-duration: .1s;
+    transition-duration: .1s;
+
 }
 
 .post .date {
@@ -235,7 +246,7 @@ h1, h2, h3, h4, h5, h6, p {
         text-indent: 0;
     }
 }
-.post h2, .post h3 {
+<D-r>.post h2, .post h3 {
     font-size: 1em;
 }
 .post p {
