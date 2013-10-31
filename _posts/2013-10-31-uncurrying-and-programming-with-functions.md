@@ -20,7 +20,7 @@ title:  "反科里化的简单推导"
 
 ````
 
-就可以写出一个有趣的函数：
+用推导的结果可以写出一个有趣的函数：
 
 ````javascript
 var call = Function.call;
