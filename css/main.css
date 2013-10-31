@@ -241,7 +241,7 @@ h1, h2, h3, h4, h5, h6, p {
         opacity: 0.8;
     }
     .fourth:hover .date {
-        padding-left: 80%;
+        padding-left: 70%;
         font-weight: 200;
     }
     .fourth:hover .date:first-line {
