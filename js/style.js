@@ -11,7 +11,7 @@
             addBlurry = function (evt) {
                 try {
                     var el = this;
-                    if (el.offsetWidth + 5 >= el.scrollWidth) return;
+                    if (el.offsetWidth + 10 >= el.scrollWidth) return;
                     el.nextElementSibling.firstElementChild.classList.add("blurry");
                     el.removeEventListener("mouseover", addBlurry);
                 } catch (e) {}
