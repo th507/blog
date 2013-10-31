@@ -24,6 +24,9 @@ th, td {
     border-top: 1px solid #ccc;
     border-left: 1px solid #ccc;
 }
+.sans-serif {
+    font-family: Avenir Next Condensed, Helvetica, Arial, sans-serif;
+}
 code, pre {
     font-family: Source Code Pro, Menlo, Monaco, Consolas, monospace;
 }
@@ -39,7 +42,7 @@ p code {
     border-left: 1px solid #aaa;
     padding-left: 2em;
 }
-.animated, a {
+.animated, a, p.blurry {
     -webkit-transform: translate(0px, 0px);
     -moz-transform: translate(0px, 0px);
     -ms-transform: translate(0px, 0px);
@@ -51,6 +54,13 @@ p code {
     -ms-transition: all .8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
     -o-transition: all .8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
     transition: all .8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+}
+.animated.faster {
+    -webkit-transition-duration: .4s;
+    -moz-transition-duration: .4s;
+    -ms-transition-duration: .4s;
+    -o-transition-duration: .4s;
+    transition-duration: .4s;
 }
 img {
     zoom: .5;
@@ -217,23 +227,23 @@ h1, h2, h3, h4, h5, h6, p {
     border-bottom: 1px solid rgba(223, 10, 55, .8);    
     min-width: 100%;
 }
-.fourth:hover ~ .three-fourth p:first-child {
-    -webkit-filter: blur(1px) grayscale(0.8);
+.fourth:hover + .three-fourth p.blurry {
+    -webkit-filter: blur(2px) grayscale(0.8);
     
-    opacity: 0.5;
-    -webkit-transition-duration: .1s;
-    -moz-transition-duration: .1s;
-    -ms-transition-duration: .1s;
-    -o-transition-duration: .1s;
-    transition-duration: .1s;
-
+    opacity: 0.8;
+}
+.fourth:hover .date {
+    padding-left: 80%;
+    font-weight: 200;
+}
+.fourth:hover .date:first-line {
+    font-weight: 600;
 }
 
 .post .date {
     margin-top: 5px;
     font-weight: 200;
     font-family: Avenir Next Condensed, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
 }
 @media (max-width: 480px) {
     .post .title {
@@ -276,5 +286,10 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 1.5em;
 }
 #footer {
+    border-top: 1px solid #eee;
+    padding: 10px 0;
     font-size: 12px;
+}
+#footer p {
+    text-align: right;
 }
