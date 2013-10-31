@@ -227,17 +227,18 @@ h1, h2, h3, h4, h5, h6, p {
     border-bottom: 1px solid rgba(223, 10, 55, .8);    
     min-width: 100%;
 }
-.fourth:hover + .three-fourth p.blurry {
-    -webkit-filter: blur(2px) grayscale(0.8);
-    
-    opacity: 0.8;
-}
-.fourth:hover .date {
-    padding-left: 80%;
-    font-weight: 200;
-}
-.fourth:hover .date:first-line {
-    font-weight: 600;
+@media (min-width: 481px) {
+    .fourth:hover + .three-fourth p.blurry {
+        -webkit-filter: blur(2px) grayscale(0.8);
+        opacity: 0.8;
+    }
+    .fourth:hover .date {
+        padding-left: 80%;
+        font-weight: 200;
+    }
+    .fourth:hover .date:first-line {
+        font-weight: 600;
+    }
 }
 
 .post .date {
@@ -290,6 +291,12 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 10px 0;
     font-size: 12px;
 }
+.standalone ~ #footer {
+    border-top: none;
+    padding-top: 0;
+}
+
 #footer p {
     text-align: right;
 }
+
