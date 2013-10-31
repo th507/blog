@@ -18,6 +18,9 @@ layout: default
         dsq.async = true;
         dsq.src = '//ljw.disqus.com/embed.js';
         (document.head || document.getElementsByTagName('head')[0]).appendChild(dsq);
+        try {
+            document.body.classList.add("detail-page");
+        } catch (e) {}
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
