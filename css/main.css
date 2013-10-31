@@ -240,6 +240,8 @@ h1, h2, h3, h4, h5, h6, p {
         -webkit-filter: blur(2px) grayscale(0.8);
         opacity: 0.8;
     }
+}
+@media (min-width: 769px) {
     .fourth:hover .date {
         padding-left: 70%;
         font-weight: 200;
