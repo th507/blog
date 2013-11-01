@@ -19,12 +19,12 @@
                 el.removeEventListener(mouseover, addBlurry);
 
                 // boolean toggler for blurry effect
-                var index = 0 + (el.offsetWidth + 10 > el.scrollWidth);
+                var index = 0 + (el.offsetWidth + 20 > el.scrollWidth);
 
                 // add or remove blurry effect
                 var method = ["add", "remove"];
 
-                el.nextElementSibling.firstElementChild.classList[method[index]]("blurry");
+                el.classList[method[index]]("blurry");
             };
 
             function checkTitleHover() {

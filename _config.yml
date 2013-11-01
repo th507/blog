@@ -1,5 +1,5 @@
 name: What's next?
 markdown: redcarpet
 extensions: ["tables"]
-    
+excerpt_separator: "<!-- more -->"
 pygments: true
