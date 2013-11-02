@@ -69,7 +69,7 @@ p code {
     margin: 0 auto;
 }
 a, .visited {
-    color: black;
+    color: crimson;
     color: rgba(223, 10, 55, .8);
     border-bottom: 1px solid transparent;
     text-decoration: none;
@@ -341,5 +341,9 @@ h1, h2, h3, h4, h5, h6, p {
 
 #footer p {
     text-align: right;
+}
+#footer a {
+    color: crimson;
+    color: rgba(223, 10, 55, .4);
 }
 
