@@ -45,7 +45,7 @@ p code {
     border-left: 1px solid #aaa;
     padding-left: 2em;
 }
-.animated, a, .fourth.blurry + .three-fourth p:first-child {
+.animated, a, .leading.blurry + .three-fourth p:first-child {
     -webkit-transform: translate(0px, 0px);
     -moz-transform: translate(0px, 0px);
     -ms-transform: translate(0px, 0px);
@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-size: 20px;
     line-height: 32px;
     vertical-align: middle;
-    font-weight: bold;
+    font-weight: 200;
     color: black;
     border-bottom: 1px solid black;
 
@@ -279,7 +279,7 @@ h1, h2, h3, h4, h5, h6, p {
     border-bottom: 1px solid crimson;
 }
 .post .clear {
-    height: 50px;
+    height: 70px;
 }
 
 .standalone {
@@ -287,14 +287,15 @@ h1, h2, h3, h4, h5, h6, p {
     max-width: 960px;
 }
 .standalone .date {
-    font-weight: normal;
+    color: #999;
+    font-weight: 400;
     text-align: left;
     margin-bottom: 1em;
 }
 .standalone h2 {
     font-size: 1.5em;
     font-weight: 200;
-    margin: 1.5em 0 0.5em;
+    margin: 1.5em 0 0;
 }
 .standalone h2:first-child {
     font-weight: 600;
