@@ -1,4 +1,6 @@
 name: What's next?
+description: Jingwei Liu's Blog
+url: http://ljw.me
 markdown: redcarpet
 extensions: ["tables"]
 excerpt_separator: "<!-- more -->"
