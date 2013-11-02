@@ -4,13 +4,19 @@ html {
 }
 
 body {
-    font: 16px Andada, Avenir Next Condensed, Helvetica, Arial, Hiragino Sans GB, serif;
+    font: 16px/1.5 Helvetica Neue, Avenir Next Condensed, Helvetica, Arial, Hiragino Sans GB, serif;
     text-align: left;
     margin: 0 auto;
     max-width: 1024px;
 }
+.sans-serif, #footer p, .post .date {
+    font-family: Avenir Next Condensed, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.serif {
+    font-family: Andada, Georgia, sans-serif;
+}
+
 table {
-    font-family: Avenir Next Condensed, Helvetica, Arial, sans-serif;
     margin: 0 auto 1em;
     border-spacing: 0;
     border-right: 1px solid #ccc;
@@ -23,9 +29,6 @@ th, td {
     padding: 5px 20px;
     border-top: 1px solid #ccc;
     border-left: 1px solid #ccc;
-}
-.sans-serif, #footer p {
-    font-family: Avenir Next Condensed, Helvetica, Arial, sans-serif;
 }
 code, pre {
     font: 12px Source Code Pro, Menlo, Monaco, Consolas, monospace;
@@ -46,24 +49,21 @@ p code {
     -webkit-transform: translate(0px, 0px);
     -moz-transform: translate(0px, 0px);
     -ms-transform: translate(0px, 0px);
-    -o-transform: translate(0px, 0px);
     transform: translate(0px, 0px);
 
     -webkit-transition: all .8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
     -moz-transition: all .8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
     -ms-transition: all .8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
-    -o-transition: all .8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
     transition: all .8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 .animated.faster, #header a {
     -webkit-transition-duration: .4s;
     -moz-transition-duration: .4s;
     -ms-transition-duration: .4s;
-    -o-transition-duration: .4s;
     transition-duration: .4s;
 }
-img {
-    zoom: .5;
+.post img {
+    zoom: 0.5;
     max-width: 100%;
     display: block;
     margin: 0 auto;
@@ -189,7 +189,7 @@ h1, h2, h3, h4, h5, h6, p {
     color: rgba(223, 10, 55, .8);
 }
 #header .title {
-    font-size: 32px;
+    font: 600 32px Andada, Georgia, serif;
     color: rgba(0,0,0,0.3);
     text-shadow: 0 2px 0 #fff;
 }
@@ -207,7 +207,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 #header .extra {
-    display: block;
     float: right;
 }
 
@@ -232,7 +231,6 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .fourth:hover .title {
-    padding-right: 10px;
     color: crimson;
     color: rgba(223, 10, 55, .8);
     background-color: white;
@@ -245,27 +243,9 @@ h1, h2, h3, h4, h5, h6, p {
     min-width: 100%;
 }
 @media (min-width: 481px) {
-     .fourth:hover .title:after {
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: 22px;
-        line-height: 32px;
-        height: 32px;
-        vertical-align: middle;
-        content: "❯";
-    }
     .fourth.blurry:hover + .three-fourth p:first-child {
         -webkit-filter: blur(2px) grayscale(0.8);
         opacity: 0.8;
-    }
-}
-@media (min-width: 769px) {
-    .fourth:hover .date {
-        padding-left: 50%;
-        color: rgba(223, 10, 55, .8);
-
-        text-align: right;
     }
 }
 
@@ -273,7 +253,6 @@ h1, h2, h3, h4, h5, h6, p {
     margin-left: 0;
     margin-top: 5px;
     font-weight: 200;
-    font-family: Avenir Next Condensed, Helvetica, Arial, sans-serif;
 }
 @media (max-width: 480px) {
     .post .title {
@@ -315,6 +294,9 @@ h1, h2, h3, h4, h5, h6, p {
 .standalone h2 {
     font-size: 1.5em;
     margin: 1.5em 0 0.5em;
+}
+.standalone + #disqus_thread {
+    margin-top: 60px;
 }
 #footer {
     border-top: 1px solid #eee;
