@@ -13,12 +13,19 @@ var ga = window.ga = {
 </script>
 <script src="/js/style.js" async></script>
 <script src="//www.google-analytics.com/analytics.js" async></script>
+{% if page.type == "post" %}
+<script src="//ljw.disqus.com/embed.js" async></script>
 
 <link rel="stylesheet" href="/css/syntax.css">
+{% endif %}
 <!-- Custom CSS -->
 <link rel="stylesheet" href="/css/main.css">
 </head>
+{% if page.type == "post" %}
+<body class="detail-page">
+{% else %}
 <body>
+{% endif %}
 <div id=header>
   <a href="/" class="title">{{ site.name }}</a>
   <a class="extra" href="/about/">about</a>
