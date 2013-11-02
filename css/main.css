@@ -293,7 +293,11 @@ h1, h2, h3, h4, h5, h6, p {
 }
 .standalone h2 {
     font-size: 1.5em;
+    font-weight: 200;
     margin: 1.5em 0 0.5em;
+}
+.standalone h2:first-child {
+    font-weight: 600;
 }
 .standalone + #disqus_thread {
     margin-top: 60px;
