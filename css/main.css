@@ -97,6 +97,16 @@ a:hover {
     margin-left: 2%;
 }
 
+.third + .third + .third + .third,
+.third + .third + .third + .two-third,
+.third + .two-third + .third,
+.third + .two-third + .two-third,
+.two-third + .third + .third,
+.two-third + .third + .two-third {
+    clear: both;
+    margin-left: 0;
+}
+
 @media (max-width: 480px) {
     .third, .two-third {
         float: none;
@@ -135,6 +145,18 @@ a:hover {
     margin-left: 2%;
 }
 
+.fourth + .fourth + .fourth + .fourth + .fourth,
+.fourth + .fourth + .two-fourth + .fourth,
+.fourth + .two-fourth + .fourth + .fourth,
+.fourth + .three-fourth + .fourth,
+.two-fourth + .fourth + .fourth + .fourth,
+.two-fourth + .two-fourth + .fourth,
+.three-fourth + .fourth + .fourth {
+    clear: both;
+    margin-left: 0;
+}
+
+
 @media (max-width: 480px) {
     .fourth, .two-fourth, .three-fourth {
         float: none;
@@ -171,7 +193,7 @@ a:hover {
 }
 
 #header {
-    margin: 10px 0 30px;
+    margin: 10px 0 0;
 }
 
 /* title */
@@ -229,7 +251,10 @@ h1, h2, h3, h4, h5, h6, p {
     position: relative;
     z-index: 4;
 }
-
+.post .leading + .three-fourth, .post .leading {
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
 .leading:hover .title {
     color: crimson;
     color: rgba(223, 10, 55, .8);
@@ -278,9 +303,6 @@ h1, h2, h3, h4, h5, h6, p {
 .post a:hover {
     border-bottom: 1px solid crimson;
 }
-.post .clear {
-    height: 70px;
-}
 
 .standalone {
     margin: 0 auto;
@@ -304,6 +326,7 @@ h1, h2, h3, h4, h5, h6, p {
     margin-top: 60px;
 }
 #footer {
+    clear: both;
     border-top: 1px solid #eee;
     padding: 10px 0;
     font-size: 12px;
