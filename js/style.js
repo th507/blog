@@ -9,8 +9,8 @@
     blurTitle = function () {
         if (hasBlur) return;
         try {
-            var fourth = document.getElementsByClassName("fourth");
-            fourth = [].slice.call(fourth);
+            var leading = document.getElementsByClassName("leading");
+            leading = [].slice.call(leading);
             var addBlurry;
 
             addBlurry = function () {
@@ -28,7 +28,7 @@
             };
 
             function checkTitleHover() {
-                fourth.forEach(function(el) {
+                leading.forEach(function(el) {
                     el.addEventListener(mouseover, addBlurry);
                 });
             }

@@ -230,7 +230,7 @@ h1, h2, h3, h4, h5, h6, p {
     z-index: 4;
 }
 
-.fourth:hover .title {
+.leading:hover .title {
     color: crimson;
     color: rgba(223, 10, 55, .8);
     background-color: white;
@@ -243,7 +243,7 @@ h1, h2, h3, h4, h5, h6, p {
     min-width: 100%;
 }
 @media (min-width: 481px) {
-    .fourth.blurry:hover + .three-fourth p:first-child {
+    .leading.blurry:hover + .three-fourth p:first-child {
         -webkit-filter: blur(2px) grayscale(0.8);
         opacity: 0.8;
     }
