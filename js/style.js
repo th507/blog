@@ -7,7 +7,13 @@
     var DOMContentLoaded = "DOMContentLoaded";
     // add blurry effect for posts with longer titles
     blurTitle = function () {
-        if (hasBlur) return;
+        if (hasBlur) {
+            try {
+                window.removeEventListener(DOMContentLoaded, blurTitle);
+            } catch(e) {}
+            return;
+        }
+
         try {
             var leading = document.getElementsByClassName("leading");
             leading = [].slice.call(leading);
@@ -42,7 +48,6 @@
             // extra check for every resize
             window.addEventListener(resize, checkTitleHover);
 
-            window.removeEventListener(DOMContentLoaded, blurTitle);
         } catch (e) {}
     };
 
