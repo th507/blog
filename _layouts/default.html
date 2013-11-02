@@ -5,17 +5,39 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title>{{ page.title }}</title>
 <meta name="viewport" content="width=device-width">
-<script src="/js/style.js" async></script>
-
 <script>
-(function(i,d,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+/*(function(i,d,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=d.createElement(o),
 m=d.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-ga('create', 'UA-21961891-3');
-ga('send', 'pageview');
+
+(function(){
+    var r = "ga";
+    window['GoogleAnalyticsObject']='ga';
+
+    window.ga = function(){
+        window.ga.q = window.ga.q || [];
+        window.ga.q.push(arguments);
+    };
+
+    window.ga.l = 1 * new Date();
+
+    a = document.createElement('script'),
+    m = document.getElementsByTagName('script')[0];
+    a.async = 1;
+    a.src = '//www.google-analytics.com/analytics.js';
+    m.parentNode.insertBefore(a,m);
+})();
+*/
+
+window.GoogleAnalyticsObject = 'ga';
+var ga = window.ga = {
+    q: [['create', 'UA-21961891-3'], ['send', 'pageview']]
+};
 </script>
+<script src="/js/style.js" async></script>
+<script src="//www.google-analytics.com/analytics.js" async></script>
 
 <link rel="stylesheet" href="/css/syntax.css">
 <!-- Custom CSS -->
