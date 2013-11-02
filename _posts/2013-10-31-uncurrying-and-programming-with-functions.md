@@ -3,9 +3,9 @@ layout: post
 title:  "反科里化的简单推导"
 ---
 
-反科里化 ([uncurrying](https://en.wikipedia.org/wiki/Currying)) 是 JavaScript 里非常有趣的一个概念。
+反科里化 ([uncurrying](https://en.wikipedia.org/wiki/Currying)) 是非常有趣的一个概念。
 
-让我们像推导数学公式一样推导一下反科里化：
+让我们像推导数学公式一样推导一下 JavaScript 里的反科里化：
 
 <!-- more -->
 
