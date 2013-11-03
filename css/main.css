@@ -245,15 +245,10 @@ h1, h2, h3, h4, h5, h6, p {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-
     display: block;
 
     position: relative;
     z-index: 4;
-}
-.post .leading + .three-fourth, .post .leading {
-    margin-top: 40px;
-    margin-bottom: 30px;
 }
 .leading:hover .title {
     color: crimson;
@@ -262,15 +257,19 @@ h1, h2, h3, h4, h5, h6, p {
     background-color: rgba(255, 255, 255, .7);
 
     overflow: visible;
-    display: inline-block;
-    border-bottom: 1px solid crimson;
-    border-bottom: 1px solid rgba(223, 10, 55, .8);    
     min-width: 100%;
+}
+.post .leading + .three-fourth, .post .leading {
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 @media (min-width: 481px) {
     .leading.blurry:hover + .three-fourth p:first-child {
         -webkit-filter: blur(2px) grayscale(0.8);
         opacity: 0.8;
+    }
+    .leading:hover .title {
+        display: inline-block;
     }
 }
 
@@ -281,13 +280,19 @@ h1, h2, h3, h4, h5, h6, p {
 }
 @media (max-width: 480px) {
     .post .title {
-        text-indent: 0;
         border-bottom: 1px solid transparent;
         color: black;
         background-color: transparent;
     }
     .post .date {
         text-indent: 0;
+    }
+    .post .leading + .three-fourth, .post .leading {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .post .leading {
+        margin-top: 20px;
     }
 }
 .post h2, .post h3 {
