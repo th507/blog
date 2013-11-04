@@ -30,4 +30,4 @@ ftcTracker.isAccessible()
 
 源代码做了简单的修改，去掉了专有的语法，但各家 tracker URL 约定往往不太一样，如果你真的想用的话，还免不了要看看代码修改一下。
 
-因为不够通用，也就不放在 repository 里了，需要的可以查看 [CoffeeScript (带注释)](https://gist.github.com/th507/7302586) 或者下载编译好的 [JavaScript （不带注释）](/assets/logging-offline-visits/ftcTracker.js)。
+因为不够通用，也就不放在 repository 里了，需要的可以查看 [CoffeeScript](https://gist.github.com/th507/7302586)（带注释）或者下载编译好的 [JavaScript](/assets/logging-offline-visits/ftcTracker.js)（不带注释）。
