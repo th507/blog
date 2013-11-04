@@ -9,7 +9,7 @@ title:  "记录离线流量"
 
 <!-- more -->
 
-我们可以考虑实现这样一种机制，每次用户访问一个新页面的时候，首先尝试直接发送[一张图片](http://en.wikipedia.org/wiki/Web_bug)，如果失败的话，就把用户这次浏览记录到 localStorage 里。每次发送前，我们检查一下 localStorage，如果有之前离线访问的记录，如果有，就依次发出。
+我们可以考虑实现这样一种机制，每次用户访问一个新页面的时候，首先尝试直接发送[一张图片](http://en.wikipedia.org/wiki/Web_bug)，如果失败的话，就把用户这次浏览记录到 localStorage 里。每次发送前，我们检查一下 localStorage，如果有之前离线访问的记录，就依次发出。
 
 我用 CoffeeScript 写了一个很简单的类，叫做 ftcTracker，专门用来记录离线流量，ftcTracker 同时支持 Google Analytics 的语法和我们内部 beacon image 的格式。
 
