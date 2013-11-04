@@ -13,7 +13,7 @@ title:  "记录离线流量"
 
 我用 CoffeeScript 写了一个很简单的类，叫做 ftcTracker，专门用来记录离线流量，ftcTracker 同时支持 Google Analytics 的语法和我们内部 beacon image 的格式。
 
-使用起来大概是这样的
+用法是这样的
 
 ````javascript
 var ftcTracker = new FTCTracker("http://path/to/beacon.gif?url=");
