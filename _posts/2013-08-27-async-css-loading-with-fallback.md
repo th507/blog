@@ -18,7 +18,7 @@ tags: javascript, css, async
 <head>
     <meta charset="UTF-8">
     <title></title>
-    <noscript><link href="http://twbs.github.io/bootstrap/dist/css/bootstrap.css" media="all" rel="stylesheet" type="text/css"/></noscript>
+    <noscript><link href="http://twbs.github.io/bootstrap/dist/css/bootstrap.css" rel="stylesheet"></noscript>
 </head>
 <body>
 <h1>async CSS loader with proper fallback</h1>
