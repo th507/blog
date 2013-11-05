@@ -8,6 +8,8 @@ tags: javascript, css, async
 
 为了同时满足这两种不同的需求，我们可以把 CSS 放在 `<noscript>` 里，这样正常情况下我们会异步加载 CSS，如果用户没有 JavaScript，则会退回传统的同步加载。
 
+<!-- more -->
+
 我写了一个简单的 demo。代码如下：
 
 ````html
