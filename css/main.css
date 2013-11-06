@@ -12,7 +12,7 @@ body {
 .sans-serif, #footer p, .post .date {
     font-family: Avenir Next Condensed, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
-.serif {
+.serif, #header .extra {
     font-family: Andada, Georgia, sans-serif;
 }
 
