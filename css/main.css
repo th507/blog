@@ -40,10 +40,14 @@ p code {
 }
 .highlight {
     background: transparent;
-    overflow: hidden;
 }
-.highlight:hover, .highlight:active {
-    overflow: visible;
+@media (max-width:768px) {
+    .highlight:hover {
+        overflow: hidden;
+    }
+    .highlight:hover, .highlight:active {
+        overflow: visible;
+    }
 }
 .highlight pre {
     border-left: 1px solid #aaa;
