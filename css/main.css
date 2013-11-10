@@ -333,12 +333,21 @@ h1, h2, h3, h4, h5, h6, p {
     text-align: left;
     margin-bottom: 1em;
 }
+.standalone .date span {
+    vertical-align: top;
+    margin-right: 15px;
+}
+.standalone a.twitter-share-button {
+    display: none;
+}
+
 .standalone h2 {
     font-size: 1.5em;
     font-weight: 200;
     margin-top: 30px;
     margin-bottom: 10px;
 }
+
 .standalone h2:first-child {
     margin-bottom: 0;
     font-weight: 600;

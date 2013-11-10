@@ -16,6 +16,23 @@ window.ga = {
 {% if page.type == "post" %}
 <script src="//ljw.disqus.com/embed.js" async></script>
 
+<script>
+(function() {
+    var src = "https://ma.twimg.com/twitter-mobile/7951fd227bb824b5b7fdbd90e00f59f190326a40/images/ic_favicon.png";
+    var img = new Image();
+    img.onload = function() {
+        var fjs=document.getElementsByTagName("script")[0];
+        var js = document.createElement("script");
+        js.id = "twitter-wjs";
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+
+        setTimeout(function(){ img = null;}, 200);
+    };
+    img.src = src;
+
+}());
+</script>
 <link rel="stylesheet" href="/css/syntax.css">
 {% endif %}
 <link rel="stylesheet" href="/css/main.css">

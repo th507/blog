@@ -5,8 +5,9 @@ type: post
 
 <div class="post standalone">
 <h2>{{ page.title }}</h2>
-<div class="date">{{ page.date | date_to_string }}</div>
-
+<div class="date">
+    <span>{{ page.date | date_to_string }}</span><a href="https://twitter.com/share" class="twitter-share-button" data-size="small" data-count="none">Tweet</a>
+</div>
 {{ content }}
 </div>
 
