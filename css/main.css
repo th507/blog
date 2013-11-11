@@ -336,6 +336,7 @@ h1, h2, h3, h4, h5, h6, p {
 .standalone .date span {
     vertical-align: top;
     margin-right: 15px;
+    line-height: 20px;
 }
 .standalone a.twitter-share-button {
     display: none;
