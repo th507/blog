@@ -332,6 +332,7 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 400;
     text-align: left;
     margin-bottom: 1em;
+    height: 20px;
 }
 .standalone .date span {
     vertical-align: top;
