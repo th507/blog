@@ -8,7 +8,7 @@
 <script>
 window.GoogleAnalyticsObject = 'ga';
 window.ga = {
-    q: [['create', 'UA-21961891-3'], ['send', 'pageview']]
+q: [['create', 'UA-21961891-3'], ['send', 'pageview']]
 };
 </script>
 <script src="/js/style.js" async></script>
@@ -18,20 +18,20 @@ window.ga = {
 
 <script>
 (function() {
-    var src = "https://p.twitter.com/t.gif";
-    var img = new Image();
-    img.onload = function() {
-        var fjs=document.getElementsByTagName("script")[0];
-        var js = document.createElement("script");
-        js.id = "twitter-wjs";
-        js.src = "https://platform.twitter.com/widgets.js";
-        fjs.parentNode.insertBefore(js, fjs);
+ var src = "https://p.twitter.com/t.gif";
+ var img = new Image();
+ img.onload = function() {
+ var fjs=document.getElementsByTagName("script")[0];
+ var js = document.createElement("script");
+ js.id = "twitter-wjs";
+ js.src = "https://platform.twitter.com/widgets.js";
+ fjs.parentNode.insertBefore(js, fjs);
 
-        setTimeout(function(){ img = null;}, 200);
-    };
-    img.src = src;
+ setTimeout(function(){ img = null;}, 200);
+ };
+ img.src = src;
 
-}());
+ }());
 </script>
 <link rel="stylesheet" href="/css/syntax.css">
 {% endif %}
@@ -45,14 +45,15 @@ window.ga = {
 <body>
 {% endif %}
 <div id=header>
-  <a href="/" class="title">{{ site.name }}</a>
-  <a class="extra" href="/about/">about</a>
+    <a href="/" class="title">{{ site.name }}</a>
+    <a class="extra" href="/about/">about</a>
 </div>
 
 {{ content }}
 
 <div id=footer>
-  <p>© 2013 <a href="http://ljw.me">Jingwei Liu</a></p>
+    <p>Opinions expressed are solely my own and do not express the views or opinions of my employer.</p>
+    <p>© 2013 <a href="http://ljw.me">Jingwei Liu</a></p>
 </div>
 
 </body>
