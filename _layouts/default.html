@@ -52,7 +52,9 @@ q: [['create', 'UA-21961891-3'], ['send', 'pageview']]
 {{ content }}
 
 <div id=footer>
-    <p>Opinions expressed are solely my own and do not express the views or opinions of my employer.</p>
+    {% if page.type == "post" %}
+    <p>Opinions expressed are solely my own and do not express the views or opinions of my employer</p>
+    {% endif %}
     <p>© 2013 <a href="http://ljw.me">Jingwei Liu</a></p>
 </div>
 
