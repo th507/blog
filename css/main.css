@@ -14,10 +14,10 @@ body, .post .title {
     color: #222426;
     color: rgba(34, 36, 38, .95);
 }
-.sans-serif, #footer p, .post .date {
+.sans-serif, #header .extra, #footer p, .post .date {
     font-family: Avenir Next Condensed, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
-.serif {
+.serif, #header .title {
     font-family: Andada, Georgia, Times, Times New Roman, sans-serif;
 }
 
@@ -219,31 +219,35 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 0;
 }
 
-#header a {
+#header a, #header span {
     color: #999;
-    line-height: 34px;
-    height: 34px;
+    line-height: 36px;
+    height: 36px;
+    vertical-align: top;
 }
 #header a:hover {
     color: rgba(223, 10, 55, .8);
 }
 #header .title {
-    font: 600 32px Andada, Georgia, serif;
+    font-size: 32px;
+    font-weight: 600;
     color: rgba(0,0,0,0.3);
     text-shadow: 0 2px 0 #fff;
 }
+
+.detail-page #header .title:before {
+    content: "< ";
+    font-size: 34px;
+}
+
 @media (max-width:480px) {
     #header a {
         font-size: 14px;
         line-height: 24px;
     }
-    #header .title {
+    #header .title, .detail-page #header .title:before {
         font-size: 20px;
     }
-}
-
-.detail-page .title:before {
-    content: "< ";
 }
 
 #header .extra {
