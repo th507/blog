@@ -12,7 +12,9 @@ var ga = {
 q: [['create', 'UA-21961891-3'], ['send', 'pageview']]
 };
 </script>
-<script src="/js/style.js" async></script>
+<script>
+{% include /style.js %}
+</script>
 <script src="https://ssl.google-analytics.com/analytics.js" async></script>
 {% if page.type == "post" %}
 <link rel="dns-prefetch" href="//ljw.disqus.com">
@@ -37,7 +39,10 @@ img.src = src;
 
 }());
 </script>
-<link rel="stylesheet" href="/css/syntax.css">
+
+<style>
+{% include /syntax.css %}
+</style>
 {% endif %}
 
 <link rel="stylesheet" href="/css/main.css">

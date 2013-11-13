@@ -17,6 +17,9 @@
         try {
             var leading = document.getElementsByClassName("leading");
             leading = [].slice.call(leading);
+            
+            if (!leading.length) throw new Error("DOM not ready");
+            
             var addBlurry;
 
             addBlurry = function () {
