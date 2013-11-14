@@ -369,6 +369,9 @@ h1, h2, h3, h4, h5, h6, p {
 .standalone + #disqus_thread {
     margin-top: 60px;
 }
+.dsq-brlink {
+    display: none;
+}
 #footer {
     clear: both;
     border-top: 1px solid #eee;

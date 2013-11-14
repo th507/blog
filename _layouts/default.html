@@ -17,25 +17,32 @@ q: [['create', 'UA-21961891-3'], ['send', 'pageview']]
 </script>
 <script src="https://ssl.google-analytics.com/analytics.js" async></script>
 {% if page.type == "post" %}
-<link rel="dns-prefetch" href="//ljw.disqus.com">
+<link rel="dns-prefetch" href="https://ljw.disqus.com">
 <link rel="dns-prefetch" href="https://twitter.com">
-<link rel="dns-prefetch" href="//go.disqus.com">
-
-<script src="//ljw.disqus.com/embed.js" async></script>
+<link rel="dns-prefetch" href="https://go.disqus.com">
 
 <script>
 (function() {
-var src = "https://p.twitter.com/t.gif";
-var img = new Image();
+function load(src) {
+    console.log(parent);
+    return function() {
+        var fjs = document.getElementsByTagName("script")[0];
+        var js = document.createElement("script");
 
-img.onload = function() {
-    var fjs = document.getElementsByTagName("script")[0];
-    var js = document.createElement("script");
-    js.id = "twitter-wjs";
-    js.src = "https://platform.twitter.com/widgets.js";
-    fjs.parentNode.insertBefore(js, fjs);
-};
-img.src = src;
+        js.async = true;
+        js.src = src;
+        fjs.parentNode.insertBefore(js, fjs);
+    };
+}
+
+var twtr = new Image();
+twtr.onload = load("https://platform.twitter.com/widgets.js");
+twtr.src = "https://p.twitter.com/t.gif";
+
+
+var disqus = new Image();
+disqus.onload = load("http://ljw.disqus.com/embed.js");
+disqus.src= "http://juggler.services.disqus.com/stat.gif";
 
 }());
 </script>
