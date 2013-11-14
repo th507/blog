@@ -14,10 +14,10 @@ body, .post .title {
     color: #222426;
     color: rgba(34, 36, 38, .95);
 }
-.sans-serif, #header .extra, #footer p, .post .date {
+.sans-serif, #footer p, .post .date {
     font-family: Avenir Next Condensed, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
-.serif, #header .title {
+.serif, #header {
     font-family: Andada, Georgia, Times, Times New Roman, sans-serif;
 }
 
