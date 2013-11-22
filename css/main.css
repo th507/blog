@@ -14,7 +14,7 @@ body, .post .title {
     color: #222426;
     color: rgba(34, 36, 38, .95);
 }
-.sans-serif, #footer p, .post .date {
+.sans-serif, #footer p {
     font-family: Avenir Next Condensed, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 .serif, #header {
@@ -210,9 +210,14 @@ a:hover, #footer a:hover {
 }
 
 #header {
-    margin: 10px 0 0;
+    margin: 40px 0 20px;
 }
 
+@media (max-width: 480px) {
+    #header {
+        margin: 10px 0;
+    }
+}
 /* title */
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
@@ -363,8 +368,12 @@ h1, h2, h3, h4, h5, h6, p {
 }
 
 .standalone h2:first-child {
-    margin-bottom: 0;
     font-weight: 600;
+    font-size: 2em;
+}
+.standalone .date {
+    margin-bottom: 2em;
+
 }
 .standalone + #disqus_thread {
     margin-top: 60px;
