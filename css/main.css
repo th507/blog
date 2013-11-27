@@ -8,7 +8,6 @@ body {
     text-align: left;
     margin: 0 auto;
     max-width: 1024px;
-    -webkit-font-smoothing: antialiased;
 }
 body, .post .title {
     color: #222426;
@@ -262,7 +261,9 @@ h1, h2, h3, h4, h5, h6, p {
 #header .extra a {
     margin-left: 20px;
 }
-
+.post {
+    -webkit-font-smoothing: antialiased;
+}
 .post .title {
     display: block;
     position: relative;
