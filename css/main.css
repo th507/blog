@@ -27,7 +27,7 @@ table {
     border-bottom: 1px solid #ccc;
 }
 tbody tr:nth-child(odd) {
-    background: #f3f3f3; 
+    background: #f3f3f3;
 }
 th, td {
     padding: 5px 20px;
@@ -61,17 +61,20 @@ p code {
     -webkit-transform: translate(0px, 0px);
     -moz-transform: translate(0px, 0px);
     -ms-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
     transform: translate(0px, 0px);
 
     -webkit-transition: all .8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
     -moz-transition: all .8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
     -ms-transition: all .8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
+    -o-transition: all .8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
     transition: all .8s cubic-bezier(0.250, 0.460, 0.450, 0.940);
 }
 .animated.faster, #header a {
     -webkit-transition-duration: .4s;
     -moz-transition-duration: .4s;
     -ms-transition-duration: .4s;
+    -o-transition-duration: .4s;
     transition-duration: .4s;
 }
 
@@ -222,6 +225,9 @@ h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     padding: 0;
 }
+h2, h3 {
+    font-size: 1em;
+}
 
 #header a, #header span {
     color: #999;
@@ -230,11 +236,13 @@ h1, h2, h3, h4, h5, h6, p {
     vertical-align: top;
 }
 #header a:hover {
+    color: crimson;
     color: rgba(223, 10, 55, .8);
 }
 #header .title {
     font-size: 32px;
     font-weight: 600;
+    color: #777;
     color: rgba(0,0,0,0.3);
     text-shadow: 0 2px 0 #fff;
 }
@@ -272,7 +280,6 @@ h1, h2, h3, h4, h5, h6, p {
     font-weight: 600;
     font-size: 20px;
     line-height: 32px;
-    vertical-align: middle;
 
     border-bottom: 1px solid black;
     text-decoration: none;
@@ -326,9 +333,6 @@ h1, h2, h3, h4, h5, h6, p {
     .post .leading {
         margin-top: 20px;
     }
-}
-.post h2, .post h3 {
-    font-size: 1em;
 }
 .post p {
     margin-bottom: 1em;
