@@ -46,7 +46,7 @@ tags: javascript, css, async
 </html>
 ````
 
-根据 w3c 规范，noscript 里如果放的是 link 元素，可以放到 head 中。
+根据[规范](http://www.w3.org/TR/2011/WD-html5-author-20110809/the-noscript-element.html)，noscript 里如果放的是 link 元素，可以放到 head 中。
 
 这样可以提前首次渲染，提高性能
 ![](/assets/async-loading-css-with-fallback/paint.png)
