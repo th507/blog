@@ -334,6 +334,7 @@ h2, h3 {
 }
 .post p {
     margin-bottom: 1em;
+    font-weight: 200;
 }
 /* keep in line with .post p */
 .post ul {
