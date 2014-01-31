@@ -56,9 +56,13 @@ disqus.src= "http://juggler.services.disqus.com/stat.gif";
 <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="{{ site.url }}/feed.xml">
 </head>
 {% if page.type == "post" or page.type == "page" %}
+<body class="detail-page blog-post">
+{% else %}
+{% if page.type == "orphan"%}
 <body class="detail-page">
 {% else %}
 <body>
+{% endif %}
 {% endif %}
 <div id=header>
     <a href="/" class="title">{{ site.name }}</a>

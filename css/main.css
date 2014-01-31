@@ -9,6 +9,10 @@ body {
     margin: 0 auto;
     max-width: 1024px;
 }
+body.blog-post {
+    max-width: 840px;
+}
+
 body, .post .title {
     color: #222426;
     color: rgba(34, 36, 38, .95);
@@ -346,7 +350,7 @@ h2, h3 {
 
 .standalone {
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 780px;
 }
 .standalone .date {
     color: #999;
@@ -358,7 +362,7 @@ h2, h3 {
 .standalone .date span {
     vertical-align: top;
     margin-right: 15px;
-    line-height: 20px;
+    line-height: 24px;
 }
 .standalone a.twitter-share-button {
     display: none;
