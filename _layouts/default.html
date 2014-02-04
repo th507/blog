@@ -15,9 +15,11 @@ var ga = {
 q: [['create', 'UA-21961891-3'], ['send', 'pageview']]
 };
 </script>
+{% if page.type != "post" %}
 <script>
 {% include /style.js %}
 </script>
+{% endif %}
 <script src="https://ssl.google-analytics.com/analytics.js" async></script>
 {% if page.type == "post" %}
 
