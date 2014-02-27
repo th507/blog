@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Parenthesis in JavaScript"
+title:  "Brackets in JavaScript"
 ---
 
 这是在公司吃货啃谈会上做的一个五分钟演讲。简报在[这里](http://th507.github.io/talk-javascript-parenthesis)。
