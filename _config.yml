@@ -2,6 +2,8 @@ name: What's next?
 description: Jingwei Liu's Blog
 url: http://ljw.me
 markdown: redcarpet
-extensions: ["tables"]
+redcarpet:
+  extensions: ["tables"]
 excerpt_separator: "<!-- more -->"
 pygments: true
+encoding: UTF-8
