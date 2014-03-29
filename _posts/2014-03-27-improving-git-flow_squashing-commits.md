@@ -41,7 +41,7 @@ title: "改进合作 git 工作流：自动提取、合并提交"
 
 比如说后端的 Alice 和前端的 Bob 合作开发一个功能，他们分别从 master 分支上 checkout，并开始工作。
 
-他们互相 merge 对方的分支的进行开发、测试。最终，这个功能开发测试完成，Bob 合并了 Alice 的分支（图中星号的位置），可以进入代码审核和上线的流程了。
+他们互相 merge 对方的分支的进行开发、测试。最终，这个功能开发测试完成，Bob 合并了 Alice 的分支（图中星号的位置）。
 
 <img src="/assets/improving-git-flow_squashing-commits/git-branches.svg" onerror="if (!this.failed) {this.failed=1;this.src=this.src.replace(/\.svg$/, '.png');}">
 
