@@ -258,7 +258,8 @@ h2, h3 {
 
 .detail-page #header .title:before {
     content: "< ";
-    font-size: 34px;
+    font-size: 40px;
+    font-weight: 100;
 }
 
 @media (max-width:480px) {
