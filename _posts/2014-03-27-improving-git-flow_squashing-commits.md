@@ -49,15 +49,19 @@ title: "改进合作 git 工作流：自动提取、合并提交"
 
 Bob 现在处在 bob/fb 上（图中星号的位置），这时候 bob/fb 实际上包含了 alice/fb 的所有提交。首先我们从 bob/fb 上新建一个分支
 
-    // 准备一个新的分支
-    $ git checkout -b bob/review
+````bash
+// 准备一个新的分支
+$ git checkout -b bob/review
+````
 
 <img src="/assets/improving-git-flow_squashing-commits/git-bob-before-rebase.svg" onerror="if (!this.failed) {this.failed=1;this.src=this.src.replace(/\.svg$/, '.png');}">
 
 然后我们通过 rebase 把自己的提交排到一起
 
-    // 把 Alice 的提交和自己的提交分别排在一起
-    $ git rebase alice/fb
+````bash
+// 把 Alice 的提交和自己的提交分别排在一起
+$ git rebase alice/fb
+````
 
 <img src="/assets/improving-git-flow_squashing-commits/git-bob-after-rebase.svg" onerror="if (!this.failed) {this.failed=1;this.src=this.src.replace(/\.svg$/, '.png');}">
 
@@ -74,7 +78,7 @@ Bob 现在处在 bob/fb 上（图中星号的位置），这时候 bob/fb 实际
 
     (action) (partial SHA-1) (short commit message)
 
-按照下面的提示，我们可以把除了第一行外的 pick 替换成 fixup (f) 或是 squash (s) 来实现合并提交。另外，上下移动一行可以对提交进行重排序。一旦你完成对提交信息的编辑，并退出编辑器，git 会按照你指定的顺序去应用提交，并且做出相应的操作（action），形成的新提交和提交信息会被保存起来。(**备注**：在 git 1.7 之后，我们还可以使用 `--autosquash` 自动合并提交，进一步提高生产效率。)
+按照下面的提示，我们可以把除了第一行外的 pick 替换成 fixup (f) 或是 squash (s) 来实现合并提交。另外，上下移动一行可以对提交进行重排序。一旦你完成对提交信息的编辑，并退出编辑器，git 会按照你指定的顺序去应用提交，并且做出相应的操作（action），形成的新提交和提交信息会被保存起来。(**注**：在 git 1.7 之后，我们还可以使用 `rebase --autosquash` 自动合并提交，进一步提高生产效率。)
 
 合并完之后我们的分支是这样的
 
@@ -83,8 +87,10 @@ Bob 现在处在 bob/fb 上（图中星号的位置），这时候 bob/fb 实际
 
 然后，我们可以使用 `rebase --onto` 取出 bob/review 上有而 alice/fb 上没有的提交，并指定新的基底分支（也就是主干分支 master）
 
-    // 取出 Bob 的提交，并排除 alice/fb 上的提交
+````bash
+// 取出 Bob 的提交，并排除 alice/fb 上的提交
     git rebase --onto master alice/fb bob/review
+````
 
 <img src="/assets/improving-git-flow_squashing-commits/git-rebase-onto.svg" onerror="if (!this.failed) {this.failed=1;this.src=this.src.replace(/\.svg$/, '.png');}">
 
