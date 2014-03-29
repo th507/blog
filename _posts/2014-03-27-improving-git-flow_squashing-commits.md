@@ -2,7 +2,7 @@
 layout: post
 title: "改进合作 git 工作流：自动提取、合并提交"
 ---
-**这是我为[美团前端 blog](http://fe.meituan.com/) ]写的一篇文章，原文在[这里](http://fe.meituan.com/improving-git-flow_squashing-commits.html) 。**
+**这是我为[美团前端 blog](http://fe.meituan.com/) 写的一篇文章，原文在[这里](http://fe.meituan.com/improving-git-flow_squashing-commits.html) 。**
 
 每天，美团的上百名工程师都在不断改进美团的用户体验，或是加入各种新鲜的功能。作为负责展现、交互的前端工程师，我们上线的次数可达一天数十次。
 
