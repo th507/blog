@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    font: 20px/1.5 Helvetica Neue, Avenir Next Condensed, Helvetica, Arial, Hiragino Sans GB, serif;
+    font: 20px/1.5 Helvetica Neue, Avenir Next Condensed, Helvetica, Arial, Hiragino Sans GB, "SourceHanSans", Source Han Sans, serif;
     text-align: left;
     margin: 0 auto;
     max-width: 1024px;
