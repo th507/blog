@@ -5,5 +5,5 @@ markdown: redcarpet
 redcarpet:
   extensions: ["tables"]
 excerpt_separator: "<!-- more -->"
-pygments: true
+highlighter: pygments
 encoding: UTF-8

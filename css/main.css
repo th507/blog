@@ -47,7 +47,7 @@ th, td {
     border-left: 1px solid #ccc;
 }
 code, pre {
-    font: 12px Source Code Pro, Menlo, Monaco, Consolas, monospace;
+    font: 18px Source Code Pro, Menlo, Monaco, Consolas, monospace;
 }
 p code {
     padding: 0 4px;
@@ -347,7 +347,7 @@ h2, h3 {
 }
 .post p {
     margin-bottom: 1em;
-    font-weight: 200;
+    font-weight: 400;
 }
 /* keep in line with .post p */
 .post ul {
