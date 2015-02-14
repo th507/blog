@@ -36,14 +36,8 @@ function load(src) {
     };
 }
 
-var twtr = new Image();
-twtr.onload = load("//platform.twitter.com/widgets.js");
-twtr.src = "//p.twitter.com/t.gif";
-
-
-var disqus = new Image();
-disqus.onload = load("//ljw.disqus.com/embed.js");
-disqus.src= "//juggler.services.disqus.com/stat.gif";
+load("//platform.twitter.com/widgets.js")();
+load("//ljw.disqus.com/embed.js")();
 
 }());
 </script>
